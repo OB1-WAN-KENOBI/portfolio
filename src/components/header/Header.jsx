@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container">
         <div className="header-wrapper">
           <a href="" className="logo">
-            Ilay
+            Maksim
           </a>
           <Nav isMenuOpen={isMenuOpen} />
           <div className="nav-menu-btn" onClick={toggleMenu}>
