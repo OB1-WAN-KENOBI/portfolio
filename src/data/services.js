@@ -1,5 +1,5 @@
 import {
-  FaPenruler,
+  FaPenRuler,
   FaPhotoFilm,
   FaFileCode,
   FaAlignLeft,
@@ -7,7 +7,7 @@ import {
 
 export const services = [
   {
-    icon: FaPenruler,
+    icon: FaPenRuler,
     title: "Ui/UX consulting",
     subtitle: "What is UX consulting?",
     description:
