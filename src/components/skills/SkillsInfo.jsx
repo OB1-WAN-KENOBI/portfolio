@@ -1,5 +1,7 @@
 import SectionTitle from "../sectionTitle/SectionTitle";
+import Awords from "./Awords";
 import Education from "./Education";
+import Skills from "./Skills";
 import "./Skills.css";
 
 const SkillsInfo = () => {
@@ -18,70 +20,8 @@ const SkillsInfo = () => {
           </div>
           <div className="skills-info education-all">
             <Education />
-            <div className="education">
-              <h4 className="label">Skills</h4>
-              <ul className="bars">
-                <li className="bar">
-                  <div className="info">
-                    <span>html</span>
-                    <span>95%</span>
-                  </div>
-                  <div className="line html"></div>
-                </li>
-                <li className="bar">
-                  <div className="info">
-                    <span>css</span>
-                    <span>85%</span>
-                  </div>
-                  <div className="line css"></div>
-                </li>
-                <li className="bar">
-                  <div className="info">
-                    <span>Javascript</span>
-                    <span>85%</span>
-                  </div>
-                  <div className="line javascript"></div>
-                </li>
-                <li className="bar">
-                  <div className="info">
-                    <span>Jquery</span>
-                    <span>80%</span>
-                  </div>
-                  <div className="line jquery"></div>
-                </li>
-                <li className="bar">
-                  <div className="info">
-                    <span>php</span>
-                    <span>75%</span>
-                  </div>
-                  <div className="line php"></div>
-                </li>
-              </ul>
-            </div>
-            <div className="education">
-              <h4 className="label">Awards</h4>
-              <ul className="education-list">
-                <li className="item">
-                  <span className="year">2021</span>
-                  <p>
-                    <span>Best Developer</span> - University Of Melbourne, NA
-                  </p>
-                </li>
-                <li className="item">
-                  <span className="year">2020</span>
-                  <p>
-                    <span>Best Writter</span> - Online Typodev Soluation Ltd.
-                  </p>
-                </li>
-                <li className="item">
-                  <span className="year">2019</span>
-                  <p>
-                    <span>Best Freelancer</span> - Fiver & Upwork Level 2 & Top
-                    Rated
-                  </p>
-                </li>
-              </ul>
-            </div>
+            <Skills />
+            <Awords />
           </div>
           <div className="education work-exp">
             <h3 className="work-exp-title">Work & Experience</h3>

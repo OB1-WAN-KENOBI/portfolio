@@ -8,11 +8,11 @@ const Education = () => {
         {education.map((item, index) => (
           <li className="item" key={index}>
             <span className="year">{item.year}</span>
-            <p>{item.degree} - {item.institution}</p>
+            <p>
+              {item.degree} - {item.institution}
+            </p>
           </li>
         ))}
-
-       
       </ul>
     </div>
   );
