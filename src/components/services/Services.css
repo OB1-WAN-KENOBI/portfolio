@@ -99,7 +99,7 @@
   transform: translateY(0);
 }
 
-.service-modal-body > i {
+.service-modal-body > .modal-close-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -121,6 +121,9 @@
 .service-modal-body li {
   color: var(--second-color);
   margin-top: 15px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
 }
 
 
