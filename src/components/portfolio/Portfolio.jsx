@@ -1,10 +1,22 @@
+import "./Portfolio.css";
+import { portfolioData } from "../../data/portfolioData";
+import SectionTitle from "../sectionTitle/SectionTitle";
+import PortfolioItem from "./PortfolioItem";
 
 const Portfolio = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <section className="portfolio section" id="portfolio">
+      <div className="container flex-center">
+        <SectionTitle title="Portfolio" subtitle="Portfolio" />
 
-export default Portfolio
+        <div className="portfolio-wrapper">
+          {portfolioData.map((item) => {
+            return <PortfolioItem key={item.id} item={item} />;
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Portfolio;
