@@ -1,8 +1,8 @@
 import mainImg from "./main-img.webp";
 import aboutImg from "./about-img.webp";
-import client1Img from "./client1.webp";
-import client2Img from "./client2.webp";
-import client3Img from "./client3.webp";
+import client1 from "./client1.webp";
+import client2 from "./client2.webp";
+import client3 from "./client3.webp";
 import portfolio1 from "./portfolio-1.webp";
 import portfolio2 from "./portfolio-2.webp";
 import portfolio3 from "./portfolio-3.webp";
@@ -13,9 +13,9 @@ import portfolio6 from "./portfolio-6.webp";
 export {
   mainImg,
   aboutImg,
-  client1Img,
-  client2Img,
-  client3Img,
+  client1,
+  client2,
+  client3,
   portfolio1,
   portfolio2,
   portfolio3,
