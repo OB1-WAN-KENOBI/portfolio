@@ -5,68 +5,38 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SectionTitle from "../SectionTitle/SectionTitle";
+import SectionTitle from "../sectionTitle/SectionTitle";
 
 const Clients = () => {
   return (
-    <section className="section our-client">
+    <section className="section our-client" id="clients">
       <div className="container flex-center">
-        <h2 className="inner-title">Our Clients</h2>
-        <h3 className="inner-second-title">Our Clients</h3>
+        <SectionTitle title="Our Clients" subTitle="Our Clients" />
         <div className="our-client-wrapper">
-          <div className="swiper client-swiper">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide swiper-client-block">
-                <div className="client-img">
-                  <img src="./img/client1.webp" alt="client1" />
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            loop={true}
+            className="swiper client-swiper"
+          >
+            {clientData.map((client) => (
+              <SwiperSlide key={client.id}>
+                <div className="swiper-slide swiper-client-block">
+                  <div className="client-img">
+                    <img src={client.image} alt={client.name} />
+                  </div>
+                  <div className="client-details">
+                    <p>{client.description}</p>
+                    <h3>{client.name}</h3>
+                    <span>{client.position}</span>
+                  </div>
                 </div>
-                <div className="client-details">
-                  <p>
-                    Hi, I’m Aria Collins and I am designer & developer who dream
-                    making the world better place by products. I am also very
-                    active for international clients.
-                  </p>
-                  <h3>Aria Collins</h3>
-                  <span>Marketing Manager</span>
-                </div>
-              </div>
-              <div className="swiper-slide swiper-client-block">
-                <div className="client-img">
-                  <img src="./img/client2.webp" alt="client1" />
-                </div>
-                <div className="client-details">
-                  <p>
-                    Hi, I’m Aria Collins and I am designer & developer who dream
-                    making the world better place by products. I am also very
-                    active for international clients.
-                  </p>
-                  <h3>Cillian Metcalfe</h3>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-              <div className="swiper-slide swiper-client-block">
-                <div className="client-img">
-                  <img src="./img/client3.webp" alt="client3" />
-                </div>
-                <div className="client-details">
-                  <p>
-                    Hi, I’m Aria Collins and I am designer & developer who dream
-                    making the world better place by products. I am also very
-                    active for international clients.
-                  </p>
-                  <h3>Kianna Baird</h3>
-                  <span>App Developer</span>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-button-next">
-              <i className="fa-solid fa-chevron-right"></i>
-            </div>
-            <div className="swiper-button-prev">
-              <i className="fa-solid fa-chevron-left"></i>
-            </div>
-          </div>
-          <div className="swiper-pagination"></div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>

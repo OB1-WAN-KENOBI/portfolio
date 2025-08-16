@@ -49,10 +49,38 @@
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: "";
+    color: var(--second-color);
+    font-weight: 900;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    font-size: 45px;
-    color: var(--second-color);
+@media (max-width: 980px) {
+    .client-swiper .swiper-slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .client-details p {
+        font-size: 20px;
+    }
+
+    .client-details h3 {
+        font-size: 22px;
+    }
+
+    .client-details span {
+        font-size: 16px;
+    }
 }
+
+@media (max-width: 768px) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+}
+

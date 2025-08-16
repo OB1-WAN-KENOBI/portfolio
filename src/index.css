@@ -228,4 +228,5 @@ main {
   padding: 20px 30px;
   letter-spacing: 1px;
   border-radius: 10px;  
+  justify-content: space-around;
 }

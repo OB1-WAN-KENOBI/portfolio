@@ -3,6 +3,7 @@ import "./Header.css";
 import { FaXing } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useState } from "react";
+import { RemoveScroll } from "react-remove-scroll";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,9 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMenuClick = () => {
+    setIsMenuOpen(false)
+  }
   return (
     <header className="header">
       <div className="container">
@@ -18,13 +22,11 @@ const Header = () => {
           <a href="" className="logo">
             Maksim
           </a>
-          <Nav isMenuOpen={isMenuOpen} />
+          <RemoveScroll enabled={isMenuOpen}>
+            <Nav isMenuOpen={isMenuOpen} handleMenuClick={handleMenuClick} />
+          </RemoveScroll>
           <div className="nav-menu-btn" onClick={toggleMenu}>
-            {isMenuOpen ? (
-              <FaXing  />
-            ) : (
-              <FaBarsStaggered />
-            )}
+            {isMenuOpen ? <FaXing /> : <FaBarsStaggered />}
           </div>
         </div>
       </div>

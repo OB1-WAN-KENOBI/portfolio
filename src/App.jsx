@@ -1,4 +1,4 @@
-import { Header, Footer, Home, About, SkillsInfo, Services, Portfolio, GetInTouch, Clients } from "./components/index";
+import { Header, Footer, Home, About, SkillsInfo, Services, Portfolio, GetInTouch, Clients, Contact } from "./components/index";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Portfolio />
         <GetInTouch />
         <Clients />
+        <Contact />
       </main>
       <Footer />
     </>
