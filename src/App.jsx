@@ -1,4 +1,16 @@
-import { Header, Footer, Home, About, SkillsInfo, Services, Portfolio, GetInTouch, Clients, Contact } from "./components/index";
+import {
+  Header,
+  Footer,
+  Home,
+  About,
+  SkillsInfo,
+  Services,
+  Portfolio,
+  GetInTouch,
+  Clients,
+  Contact,
+  ScrollToTop,
+} from "./components/index";
 
 function App() {
   return (
@@ -15,6 +27,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
