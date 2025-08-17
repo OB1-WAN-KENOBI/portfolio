@@ -2,8 +2,8 @@ import { infoLinks, followLinks } from "../../data/footerData";
 import "./Footer.css";
 import FooterLinkGroup from "./FooterLinkGroup";
 
-
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="container footer-wrapper">
@@ -13,17 +13,16 @@ const Footer = () => {
           <a href="#about">About me</a>
         </div>
         <div className="hr"></div>
-        <FooterLinkGroup title="More" links={infoLinks}/>
-
+        <FooterLinkGroup title="More" links={infoLinks} isSocial={false} />
         <div className="hr"></div>
-        <FooterLinkGroup title="Follow" links={followLinks}/>
+        <FooterLinkGroup title="Follow" links={followLinks} isSocial={true} />
       </div>
       <p className="footer-copyright">
-        © <span className="year">2024</span> by Coding Snow. All rights
+        © <span className="year">{currentYear}</span> by Coding Snow. All rights
         reserved.
       </p>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;
