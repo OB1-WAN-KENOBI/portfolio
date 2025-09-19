@@ -10,6 +10,7 @@ import {
   Clients,
   Contact,
   ScrollToTop,
+  ThemeToggle,
 } from "./components/index";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <ThemeToggle />
     </>
   );
 }

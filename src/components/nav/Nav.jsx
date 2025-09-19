@@ -8,8 +8,8 @@ const Nav = ({ isMenuOpen, handleMenuClick }) => {
     "skills",
     "services",
     "portfolio",
-    "contact",
     "clients",
+    "contact",
   ];
   return (
     <nav className={isMenuOpen ? "nav active" : "nav"}>

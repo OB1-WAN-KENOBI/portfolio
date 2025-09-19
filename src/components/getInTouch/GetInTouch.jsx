@@ -1,7 +1,7 @@
 import "./GetInTouch.css";
 import { FaPaperPlane } from "react-icons/fa";
 
-const GetInToucj = () => {
+const GetInTouch = () => {
   return (
     <div className="get-in-touch sub-section">
       <div className="container flex-center">
@@ -21,4 +21,4 @@ const GetInToucj = () => {
   );
 };
 
-export default GetInToucj;
+export default GetInTouch;
