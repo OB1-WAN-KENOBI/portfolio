@@ -1,6 +1,9 @@
 import { aboutImg } from "../../assets/images";
 import { FaDownload } from "react-icons/fa";
 import SectionTitle from "../sectionTitle/SectionTitle";
+import { motion } from "motion/react";
+import { slideVariants } from "../../utils/animation";
+import { profList } from "../../data/profList";
 import "./About.css";
 
 const About = () => {
@@ -8,43 +11,78 @@ const About = () => {
     <section className="about section" id="about">
       <div className="container flex-center">
         <SectionTitle title="About me" subtitle="About me" />
-
         <div className="about-wrapper">
-          <div className="about-img">
+          <motion.div
+            className="about-img"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
+            variants={slideVariants("left", 0.9, 100, false)}
+          >
             <img src={aboutImg} alt="about" />
-          </div>
+          </motion.div>
           <div className="about-info">
             <div className="description">
-              <h3>I'm Maksim</h3>
-              <h4>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                custom={0}
+                variants={slideVariants("right", 0.5, 50, true)}
+              >
+                I'm Maksim
+              </motion.h3>
+              <motion.h4
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                custom={0}
+                variants={slideVariants("right", 0.5, 50, true)}
+              >
                 A Lead <span>Front-End Developer</span> based in{" "}
                 <span>California</span>
-              </h4>
-              <p>
+              </motion.h4>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                custom={0}
+                variants={slideVariants("right", 0.5, 50, true)}
+              >
                 I design and develop services for customers specializing
                 creating stylish, modern websites, web services and online
                 stores. My passion is to design digital user experiences through
                 meaningful interactions. Check out my Portfolio
-              </p>
+              </motion.p>
             </div>
             <ul className="professional-list">
-              <li className="list-item">
-                <span className="number">5+</span>
-                <span className="text">Years of experience</span>
-              </li>
-              <li className="list-item">
-                <span className="number">3K+</span>
-                <span className="text">Happy Customers</span>
-              </li>
-              <li className="list-item">
-                <span className="number">5+</span>
-                <span className="text">Success Projects</span>
-              </li>
+              {profList.map((item, index) => (
+                <motion.li
+                  className="list-item"
+                  key={item.id}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.5 }}
+                  custom={index}
+                  variants={slideVariants("right", 0.5, 40, true)}
+                >
+                  <span className="number">{item.number}</span>
+                  <span className="text">{item.text}</span>
+                </motion.li>
+              ))}
             </ul>
-            <a href="" className="inner-info-link">
+            <motion.a
+              href=""
+              className="inner-info-link"
+              custom={3}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              variants={slideVariants("bottom", 0.7, 150, false)}
+            >
               Download
               <FaDownload />
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>
