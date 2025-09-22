@@ -6,13 +6,21 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SectionTitle from "../sectionTitle/SectionTitle";
+import { motion } from "motion/react";
+import { slideVariants } from "../../utils/animation";
 
 const Clients = () => {
   return (
     <section className="section our-client" id="clients">
       <div className="container flex-center">
-        <SectionTitle title="Our Clients" subTitle="Our Clients" />
-        <div className="our-client-wrapper">
+        <SectionTitle title="Our Clients" subtitle="Our Clients" />
+        <motion.div
+          className="our-client-wrapper"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          variants={slideVariants("top", 0.7, 70, false)}
+        >
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={30}
@@ -37,7 +45,7 @@ const Clients = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
