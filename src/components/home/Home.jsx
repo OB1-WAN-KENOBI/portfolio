@@ -3,11 +3,7 @@ import { FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaCircleArrowRight, FaArrowDown } from "react-icons/fa6";
 import { mainImg } from "../../assets/images";
 import { motion } from "motion/react";
-import {
-  iconVariants,
-  motionVariants,
-  imgVariants,
-} from "../../utils/animation";
+import { iconVariants, slideVariants } from "../../utils/animation";
 
 const icons = [
   { id: 1, href: "", icon: <FaFacebookF /> },
@@ -40,7 +36,7 @@ const Home = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
             custom={1}
-            variants={motionVariants}
+            variants={slideVariants("left", 0.5, 100, true)}
           >
             Hi, I am Maksim
           </motion.h1>
@@ -49,7 +45,7 @@ const Home = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
             custom={2}
-            variants={motionVariants}
+            variants={slideVariants("left", 0.7, 120, true)}
           >
             Front-end Developer
           </motion.h3>
@@ -58,7 +54,7 @@ const Home = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
             custom={3}
-            variants={motionVariants}
+            variants={slideVariants("left", 0.9, 140, true)}
           >
             I create stunning websites for your business, Highly experienced in
             web design and development
@@ -70,7 +66,7 @@ const Home = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
             custom={4}
-            variants={motionVariants}
+            variants={slideVariants("left", 0.9, 160, true)}
           >
             Contact me
             <FaCircleArrowRight />
@@ -81,7 +77,7 @@ const Home = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
-          variants={imgVariants}
+          variants={slideVariants("right", 0.9, 150, true)}
         >
           <img src={mainImg} alt="man" />
         </motion.div>
