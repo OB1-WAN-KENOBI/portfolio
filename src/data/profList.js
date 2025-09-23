@@ -3,17 +3,17 @@ import { number } from "motion";
 export const profList = [
   {
     id: 1,
-    number: "5+",
-    text: "Years of experience",
+    number: "10",
+    text: "Months of learning Front-End",
   },
   {
     id: 2,
-    number: "3K+",
-    text: "Happy Customers",
+    number: "10+",
+    text: "Completed projects",
   },
   {
     id: 3,
-    number: "5+",
-    text: "Success Projects",
+    number: "100%",
+    text: "Motivation to grow in IT",
   },
 ];

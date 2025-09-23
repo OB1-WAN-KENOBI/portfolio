@@ -1,56 +1,61 @@
 import {
-  FaPenRuler,
-  FaPhotoFilm,
   FaFileCode,
-  FaAlignLeft,
-} from "react-icons/fa6";
+  FaPaintBrush,
+  FaLaptopCode,
+  FaProjectDiagram,
+} from "react-icons/fa";
 
 export const services = [
   {
-    icon: FaPenRuler,
-    title: "Ui/UX consulting",
-    subtitle: "What is UX consulting?",
-    description:
-      "UX consulting helps companies improve their product's overall usability...",
-    list: [
-      "Extablish the tight UX processes",
-      "Create eexceptional user experiences",
-      "Discover new business",
-      "Save resources",
-    ],
-  },
-  {
-    icon: FaPhotoFilm,
-    title: "Branding & Design",
-    subtitle: "What is Brand & Design?",
-    description:
-      "Branding and design are essential components of a company's identity...",
-    list: [
-      "Logo design",
-      "Banner design",
-      "Visual identity packages",
-      "Business Cards & Systems",
-    ],
-  },
-  {
     icon: FaFileCode,
     title: "Web Development",
-    subtitle: "What is Web Development?",
+    subtitle: "Building responsive websites and apps",
     description:
-      "Web development is the process of building and maintaining websites...",
-    list: ["Websites", "Web applications", "E-commerce platforms", "Testing"],
+      "I create modern, responsive websites and web applications using HTML, CSS, JavaScript, TypeScript, and React.",
+    list: [
+      "Landing pages",
+      "Interactive UI components",
+      "Web apps",
+      "E-commerce mockups",
+    ],
   },
   {
-    icon: FaAlignLeft,
-    title: "Content Creation",
-    subtitle: "What is Content Creation?",
+    icon: FaPaintBrush,
+    title: "UI/UX Design",
+    subtitle: "Designing user-friendly interfaces",
     description:
-      "Content creation is the process of generating valuable and relevant content...",
+      "I focus on creating clean and intuitive user interfaces to improve the overall user experience.",
     list: [
-      "Web content",
-      "Blog posts for SEO",
-      "Social media content",
-      "Video scripts",
+      "Wireframes & mockups",
+      "UI component design",
+      "Responsive layouts",
+      "Basic interaction animations",
+    ],
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Personal & Learning Projects",
+    subtitle: "Applying skills in real projects",
+    description:
+      "I develop personal projects and course assignments to practice and improve my front-end skills.",
+    list: [
+      "Pet projects",
+      "Course projects from Yandex Practicum",
+      "Open Source contributions",
+      "GitHub portfolio",
+    ],
+  },
+  {
+    icon: FaProjectDiagram,
+    title: "Problem Solving & Learning",
+    subtitle: "Continuous skill growth",
+    description:
+      "I actively learn new technologies and best practices while solving coding challenges and real-world tasks.",
+    list: [
+      "JavaScript/TypeScript exercises",
+      "React challenges",
+      "Code refactoring",
+      "Algorithm practice",
     ],
   },
 ];

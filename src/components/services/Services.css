@@ -25,7 +25,9 @@
 }
 
 .service-card {
-    cursor: pointer;   
+  cursor: pointer;
+  width: 250px;
+  height: 300px;
 }
 
 .service-card > .services-icon {
@@ -43,7 +45,6 @@
 }
 
 .learn-more-btn {
-  
   color: var(--third-color);
   display: flex;
   align-items: center;
@@ -125,5 +126,3 @@
   display: flex;
   align-items: center;
 }
-
-

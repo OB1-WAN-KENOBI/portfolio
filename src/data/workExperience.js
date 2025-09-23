@@ -1,26 +1,26 @@
 export const workExperience = [
   {
-    title: "Sr. Graphic Designer",
-    type: "Part Time | Office",
-    date: "2020 - 2021",
-    company: "Avada Theme",
+    title: "Front-End Developer (Personal Project)",
+    type: "Self-Learning | Remote",
+    date: "2024 - Present",
+    company: "Independent",
     description:
-      "I design and develop services for customers of all sizes, specializing in creating stylish, modern websites",
+      "Developed personal projects using HTML, CSS, JavaScript, TypeScript, and React. Focused on creating responsive and user-friendly interfaces.",
   },
   {
-    title: "Cr. Web Developer",
-    type: "Full Time | InHouse",
-    date: "2019 - 2020",
-    company: "ib-themes ltd.",
+    title: "Open Source Contributor",
+    type: "Part-Time | Remote",
+    date: "2023 - Present",
+    company: "GitHub Projects",
     description:
-      "I design and develop services for customers of all sizes, specializing in creating stylish, modern websites",
+      "Contributed to open source projects, fixing bugs and adding features, improving collaboration skills and understanding of real-world codebases.",
   },
   {
-    title: "Jr. Web Developer",
-    type: "Full Time | Remote",
-    date: "2018 - 2019",
-    company: "Creative Gigs",
+    title: "Front-End Projects (Yandex Practicum)",
+    type: "Learning | Remote",
+    date: "2024 - 2025",
+    company: "Yandex Practicum",
     description:
-      "I design and develop services for customers of all sizes, specializing in creating stylish, modern websites",
+      "Completed multiple projects as part of the course, including landing pages, web apps, and interactive UI components.",
   },
 ];

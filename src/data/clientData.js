@@ -3,26 +3,26 @@ import { client1, client2, client3 } from "../assets/images";
 export const clientData = [
   {
     id: 1,
-    name: "Aria Collins",
-    position: "Marketing Manager",
+    name: "Yandex Practicum Project",
+    position: "Course Assignment",
     image: client1,
     description:
-      "Hi, I’m Aria Collins and I am designer & developer who dream making the world better place by products. I am also very active for international clients.",
+      "Completed a responsive landing page project as part of the Yandex Practicum course, focusing on HTML, CSS, and JavaScript best practices.",
   },
   {
     id: 2,
-    name: "Cillian Metcalfe",
-    position: "Graphic Designer",
+    name: "Personal Web App",
+    position: "Independent Project",
     image: client2,
     description:
-      "Hi, I’m Cillian Metcalfe and I am designer & developer who dream making the world better place by products. I am also very active for international clients.",
+      "Developed a small React application to practice component-based architecture and interactive UI elements, improving front-end skills.",
   },
   {
     id: 3,
-    name: "Kianna Baird",
-    position: "App Developer",
+    name: "Open Source Contribution",
+    position: "GitHub Project",
     image: client3,
     description:
-      "Hi, I’m Kianna Baird and I am designer & developer who dream making the world better place by products. I am also very active for international clients.",
+      "Contributed to an open source project on GitHub, fixing bugs and adding features, gaining experience with real-world codebases.",
   },
 ];

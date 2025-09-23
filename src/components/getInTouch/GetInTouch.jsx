@@ -20,7 +20,8 @@ const GetInTouch = () => {
             <h2>NEXT PROJECT</h2>
           </motion.div>
           <motion.a
-            href=""
+            href="https://t.me/The_darkness_in_you"
+            target="_blank"
             className="get-in-touch-link inner-info-link"
             initial="hidden"
             whileInView="visible"

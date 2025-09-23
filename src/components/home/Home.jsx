@@ -1,14 +1,18 @@
 import "./Home.css";
-import { FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaPaperPlane } from "react-icons/fa";
 import { FaCircleArrowRight, FaArrowDown } from "react-icons/fa6";
 import { mainImg } from "../../assets/images";
 import { motion } from "motion/react";
 import { iconVariants, slideVariants } from "../../utils/animation";
 
 const icons = [
-  { id: 1, href: "", icon: <FaFacebookF /> },
-  { id: 2, href: "", icon: <FaInstagram /> },
-  { id: 3, href: "", icon: <FaGithub /> },
+  { id: 1, href: "https://t.me/The_darkness_in_you", icon: <FaPaperPlane /> },
+  {
+    id: 2,
+    href: "https://www.instagram.com/white_brooo/",
+    icon: <FaInstagram />,
+  },
+  { id: 3, href: "https://github.com/OB1-WAN-KENOBI", icon: <FaGithub /> },
 ];
 
 const Home = () => {
@@ -19,6 +23,7 @@ const Home = () => {
           {icons.map((item, index) => (
             <motion.a
               href={item.href}
+              target="_blank"
               key={item.id}
               custom={index}
               variants={iconVariants}
@@ -60,8 +65,9 @@ const Home = () => {
             web design and development
           </motion.p>
           <motion.a
-            href=""
+            href="https://t.me/The_darkness_in_you"
             className="home-info-link inner-info-link"
+            target="_blank"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}

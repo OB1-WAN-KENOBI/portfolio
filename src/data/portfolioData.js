@@ -1,45 +1,59 @@
-import {portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6} from "../assets/images";
+import {
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  portfolio4,
+  portfolio5,
+  portfolio6,
+} from "../assets/images";
 
-export  const portfolioData = [
+export const portfolioData = [
   {
     id: 1,
-    title: "UI/UX Design",
-    category: "YouTube",
+    title: "Landing Page Project",
+    category: "HTML/CSS",
     imgSrc: portfolio1,
-    description: "A collection of UI/UX design projects showcasing user-centered design principles and innovative interfaces.",
+    description:
+      "A responsive landing page built with HTML, CSS, and basic JavaScript to showcase a fictional product.",
   },
   {
     id: 2,
-    title: "Branding & Design",
-    category: "YouTube",
+    title: "React Web App",
+    category: "React",
     imgSrc: portfolio2,
-    description: "A portfolio of branding and design projects that highlight creative brand strategies and visual identities.",
+    description:
+      "A small React application demonstrating component-based architecture and interactive UI elements.",
   },
-  {    id: 3,
-    title: "Web Design",
-    category: "YouTube",
+  {
+    id: 3,
+    title: "E-commerce Mockup",
+    category: "Web Development",
     imgSrc: portfolio3,
-    description: "A showcase of web design projects that combine aesthetics and functionality for an optimal user experience.",
+    description:
+      "A mock e-commerce site built with React and JavaScript, featuring product listings and shopping cart functionality.",
   },
   {
     id: 4,
-    title: "Web Development",
-    category: "YouTube",
+    title: "Portfolio Website",
+    category: "Personal Project",
     imgSrc: portfolio4,
-    description: "A collection of web development projects demonstrating technical skills and innovative solutions.",
+    description:
+      "My personal portfolio website showcasing projects, skills, and contact information.",
   },
-  {    id: 5,
-    title: "Content Creation",
-    category: "YouTube",
+  {
+    id: 5,
+    title: "Open Source Contribution",
+    category: "GitHub",
     imgSrc: portfolio5,
-    description: "A portfolio of content creation projects that engage audiences through compelling narratives and visuals.",
+    description:
+      "Contribution to open source projects on GitHub, including bug fixes and small feature additions.",
   },
-  {    id: 6,
-    title: "Interface Design",
-    category: "YouTube",
+  {
+    id: 6,
+    title: "Interactive UI Components",
+    category: "UI/UX",
     imgSrc: portfolio6,
-    description: "A showcase of interface design projects that prioritize usability and aesthetic appeal for digital products.",
+    description:
+      "A set of interactive UI components created with React and CSS animations for practice and portfolio use.",
   },
 ];
-
-

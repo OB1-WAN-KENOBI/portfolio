@@ -39,8 +39,7 @@ const About = () => {
                 custom={0}
                 variants={slideVariants("right", 0.5, 50, true)}
               >
-                A Lead <span>Front-End Developer</span> based in{" "}
-                <span>California</span>
+                <span>Front-End Developer</span> based in <span>Armenia</span>
               </motion.h4>
               <motion.p
                 initial="hidden"
@@ -49,10 +48,11 @@ const About = () => {
                 custom={0}
                 variants={slideVariants("right", 0.5, 50, true)}
               >
-                I design and develop services for customers specializing
-                creating stylish, modern websites, web services and online
-                stores. My passion is to design digital user experiences through
-                meaningful interactions. Check out my Portfolio
+                I design and build modern, responsive websites and web
+                applications using HTML, CSS, JavaScript, TypeScript and React.
+                My focus is on creating clean, user-friendly interfaces and
+                improving the overall digital experience. Check out my projects
+                below.
               </motion.p>
             </div>
             <ul className="professional-list">

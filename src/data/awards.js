@@ -1,17 +1,17 @@
 export const awards = [
   {
-    year: "2021",
-    title: "Best Developer",
-    institution: "University Of Melbourne, NA",
+    year: "2024",
+    title: "Completed Yandex Practicum Front-End Bootcamp",
+    institution: "Yandex Practicum",
   },
   {
-    year: "2020",
-    title: "Best Writer",
-    institution: "Online Typodev Solution Ltd.",
+    year: "2024",
+    title: "First Personal Project Deployed",
+    institution: "Independent Project",
   },
   {
-    year: "2019",
-    title: "Best Freelancer",
-    institution: "Fiverr & Upwork Level 2 & Top Rated",
+    year: "2023–2025",
+    title: "Active GitHub Contributions",
+    institution: "Open Source & Personal Projects",
   },
 ];
